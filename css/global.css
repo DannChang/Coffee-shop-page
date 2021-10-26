@@ -1,0 +1,33 @@
+body {
+    font-family: 'Open Sans';
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 33px;
+    font-weight: 300;
+}
+
+.nav-heading {
+    font-size: 33px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.icon-bean {
+    min-width: 50px;
+    max-width: 120px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+}
