@@ -22,7 +22,7 @@
     color: #FFF;
 
     text-align: center;
-    min-width: 200px;
+    min-width: 12.5rem;
     max-width: 90%;
 }
 
@@ -32,8 +32,8 @@
 }
 
 .social-handles img {
-    min-width: 50px;
-    max-width: 120px;
+    min-width: 3.125rem;
+    max-width: 7.5rem;
 }
 
 
