@@ -3,22 +3,22 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 300;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 300;
 }
 
 h3 {
-    font-size: 33px;
+    font-size: 2.063rem;
     font-weight: 300;
 } 
 
 p {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
@@ -27,7 +27,7 @@ a {
 }
 
 button {
-    font-size: 21px;
+    font-size: 1.313rem;
     font-weight: 400;
     background-color: #5BACC3;
     color: #FFF;
@@ -36,12 +36,12 @@ button {
 }
 
 .address h3 {
-    font-size: 33px;
+    font-size: 2.063rem;
     font-weight: 300;
 }
 
 .nav-heading {
-    font-size: 33px;
+    font-size: 2.063rem;
     text-decoration: none;
     font-weight: 300;
 }

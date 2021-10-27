@@ -21,7 +21,7 @@
 
 .menu-nav-link {
     text-align: center;
-    font-size: 21px;
+    font-size: 1.313rem;
     list-style-type: none;
     background-color: #393939;
     min-width: 100%;
@@ -35,7 +35,7 @@
 
 .menu-text {
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-style: italic;
     font-weight: 400;
     min-width: 50px;
