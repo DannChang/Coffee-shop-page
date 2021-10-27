@@ -1,0 +1,39 @@
+.main-header {
+    background-color: #FFF0ED;
+}
+
+.header-section {
+    background-color: #FFF0ED;
+}
+
+
+
+.our-products-section {
+    
+}
+
+.product-price {
+    font-size: 30px;
+    color: #5BACC3;
+}
+
+.discount-section {
+    background-color: #373737;
+    color: #FFF;
+
+    text-align: center;
+    min-width: 200px;
+    max-width: 90%;
+}
+
+.discount-section p {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.social-handles img {
+    min-width: 50px;
+    max-width: 120px;
+}
+
+

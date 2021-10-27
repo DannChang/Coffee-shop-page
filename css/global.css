@@ -15,6 +15,25 @@ h2 {
 h3 {
     font-size: 33px;
     font-weight: 300;
+} 
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+button {
+    font-size: 21px;
+    font-weight: 400;
+    background-color: #5BACC3;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.address h3 {
+    font-size: 33px;
+    font-weight: 300;
 }
 
 .nav-heading {
@@ -30,4 +49,8 @@ h3 {
 
 .main-nav ul {
     list-style-type: none;
+}
+
+.footer-section {
+    background-color: #FFF0ED;
 }
