@@ -22,6 +22,10 @@ p {
     font-weight: 400;
 }
 
+a {
+    cursor: pointer;
+}
+
 button {
     font-size: 21px;
     font-weight: 400;
