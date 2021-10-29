@@ -1,16 +1,76 @@
-.header-section {
+.nitro-coffee {
     background-color: #FFF0ED;
 }
 
-.main-header {
-    background-color:#FFF;
+.nitro-coffee__heading {
+
 }
 
-.our-products-section {
-    
+.nitro-coffee-contents {
+
 }
 
-.product-price {
+.nitro-coffee-contents__text {
+
+}
+
+.nitro-coffee-contents__button {
+
+}
+
+.nitro-coffee-contents__image {
+
+}
+
+.our-products {
+
+}
+
+.our-products__heading {
+    margin: 20px;
+}
+
+.our-products__coffee-beans {
+    display: inline-block;
+    min-width: 330px;
+    max-width: 350px;
+    min-height: 440px;
+    max-height: 460px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.our-products__cold-brew {
+    display: inline-block;
+    min-width: 330px;
+    max-width: 350px;
+    min-height: 440px;
+    max-height: 460px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.our-products__in-house-brew {
+    display: inline-block;
+    min-width: 330px;
+    max-width: 350px;
+    min-height: 440px;
+    max-height: 460px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.our-products__price {
     font-size: 1.875rem;
     color: #5BACC3;
 }
@@ -24,14 +84,31 @@
     max-width: 90%;
 }
 
-.discount-section p {
+.discount-section__text {
     font-size: 2.813rem;
     font-weight: 400;
 }
 
-.social-handles img {
+.social-handles__images {
     min-width: 3.125rem;
     max-width: 7.5rem;
+}
+
+.address {
+    display: inline-block;
+    margin: auto;
+    width: 33.33%;
+}
+
+.hours {
+    display: inline-block;
+    margin: auto;
+    width: 33.33%;
+}
+
+.social-handles {
+    display: inline-block;
+    margin: auto;
 }
 
 

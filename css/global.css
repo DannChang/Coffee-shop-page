@@ -53,8 +53,12 @@ button {
     vertical-align: middle;
 }
 
+.main-header {
+    background-color:#FFF0ED;
+}
 
-.nav-link {
+
+.header-nav__item {
     display: inline-block;
     padding-left: 2rem;
 }
@@ -70,12 +74,16 @@ button {
     vertical-align: 0.9rem;
 }
 
-.icon-bean {
+.header-nav__link--active {
+    color: #5BACC3;
+}
+
+.header__logo {
     min-width: 3.125rem;
     max-width: 7.5rem;
 }
 
-.main-nav ul {
+.header-nav ul {
     list-style-type: none;
 }
 
