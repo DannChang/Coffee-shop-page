@@ -1,3 +1,8 @@
+.main-header {
+    background-color:#FFF0ED;
+}
+
+
 .menu-section {
     background-image: url("../assets/images/coffee-circle.jpg");
     min-width: 100%;
@@ -6,10 +11,13 @@
     max-height: 37.5rem;
     background-position: center;
     background-size: cover;
+    
 }
 
 
 .menu-heading {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     color: #FFF;
     background-color: #393939;
@@ -19,18 +27,34 @@
     max-height: 12.5rem;
 }
 
-.menu-nav-link {
+.menu-nav {
     text-align: center;
     font-size: 1.313rem;
     list-style-type: none;
     background-color: #393939;
     min-width: 100%;
     max-width: 100%;
+
 }
 
-.menu-nav-link a {
+.menu-nav a {
     color: #FFF;
     text-decoration: none;
+}
+
+.menu-nav-link {
+    display: inline-block;
+    border-left: 5px solid #5BACC3;
+    padding-left: 1rem;
+    margin: 1rem;
+}
+
+#shop-now {
+    color: #5BACC3;
+}
+
+.menu-items {
+    
 }
 
 .menu-text {
@@ -40,6 +64,8 @@
     font-weight: 400;
     min-width: 3.125rem;
     max-width: 31.25rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-price {
@@ -47,8 +73,14 @@
     text-align: center;
 }
 
+.menu-card {
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
 .hot-drinks {
     background-color: #FFF0ED;
+    padding: 2rem;
 }
 
 .hot-drinks h2, h3 {
@@ -57,6 +89,7 @@
 
 .cold-drinks {
     background-color: #F7F7F7;
+    padding: 2rem;
 }
 
 .cold-drinks h2, h3 {
@@ -65,6 +98,7 @@
 
 .pastries {
     background-color: #FFF0ED;
+    padding: 2rem;
 }
 
 .pastries h2, h3 {

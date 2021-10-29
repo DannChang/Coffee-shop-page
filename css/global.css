@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Open Sans';
 }
@@ -35,6 +41,24 @@ button {
     cursor: pointer;
 }
 
+.main-page {
+    padding: 0;
+    display: inline;
+}
+
+.main-header * {
+    /* background-color: #FFF0ED; */
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+
+.nav-link {
+    display: inline-block;
+    padding-left: 2rem;
+}
+
 .address h3 {
     font-size: 2.063rem;
     font-weight: 300;
@@ -42,8 +66,8 @@ button {
 
 .nav-heading {
     font-size: 2.063rem;
-    text-decoration: none;
     font-weight: 300;
+    vertical-align: 0.9rem;
 }
 
 .icon-bean {
