@@ -9,19 +9,27 @@
 }
 
 .nitro-coffee__heading {
-    padding: 20px;
+    padding: 1.25rem;
     margin-left: 15%;
 }
 
 .nitro-coffee-contents {
-    max-width: 30rem; 
+    width: 30rem; 
     margin-left: 15%;
     padding: 1.25rem;
     text-align: left;
 }
 
+.nitro-coffee-contents__text {
+    margin-bottom: 2.5rem;
+}
+
 .nitro-coffee-contents__button {
-    margin-top: 1.875rem;
+    padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+    color: #FFF;
+    background-color: #5BACC3;
+    text-decoration: none;
+    text-align: center;
 }
 
 .nitro-coffee-contents__image {
@@ -33,7 +41,7 @@
 .our-products {
     text-align: center;
     background-color: #F7F7F7;
-    padding: 1rem;
+    padding: 5rem;
 }
 
 .our-products__heading {
@@ -41,46 +49,18 @@
     margin: 1.25rem;
 }
 
-.our-products__coffee-beans {
+.our-products__card-item {
     display: inline-block;
-    min-width: 20.625rem;
-    max-width: 21.875rem;
-    min-height: 27.5rem;
-    max-height: 28.75rem;
+    width: 21.25rem;
     border-radius: 10px;
     box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
     text-align: center;
     padding: 1.25rem;
-    margin: 1.25rem;
-}
-
-.our-products__cold-brew {
-    display: inline-block;
-    min-width: 20.625rem;
-    max-width: 21.875rem;
-    min-height: 27.5rem;
-    max-height: 28.75rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    padding: 1.25rem;
-    margin: 1.25rem;
-}
-
-.our-products__in-house-brew {
-    display: inline-block;
-    min-width: 20.625rem;
-    max-width: 21.875rem;
-    min-height: 27.5rem;
-    max-height: 28.75rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    padding: 1.25rem;
-    margin: 1.25rem;
+    margin: 2.5rem;
 }
 
 .our-products__images {
+    margin: auto;
     min-height: 15rem;
     max-height: 34.375rem;
 }
@@ -88,11 +68,14 @@
 .our-products__price {
     font-size: 1.875rem;
     color: #5BACC3;
-    margin-top: 30px;
+    margin-top: 1.875rem;
 }
 
 .our-products__button {
-    margin: 3rem;
+    padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+    color: #FFF;
+    background-color: #5BACC3;
+    text-decoration: none;
     text-align: center;
 }
 
@@ -153,4 +136,7 @@
     padding-bottom: 1rem;
 }
 
+.social-handles__link {
+    text-decoration: none;
+}
 
