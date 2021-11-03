@@ -1,4 +1,4 @@
 # Coffee-shop-page
 
 Current mock-up + iteration:
-![image](https://user-images.githubusercontent.com/27746994/139969045-8b8ae85d-d2ed-480d-a53f-666ee66cd9e8.png)
+![image](https://user-images.githubusercontent.com/27746994/140012512-fee2adc8-fb2c-410d-95e1-ac132aa8eb0c.png)
