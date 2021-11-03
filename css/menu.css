@@ -1,5 +1,7 @@
 .menu-section {
     background-image: url("../assets/images/coffee-circle.jpg");
+    display: flex;
+    align-items: center;
     min-width: 100%;
     max-width: 100%;
     min-height: 36rem;
@@ -9,9 +11,11 @@
 }
 
 .menu-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     color: #FFF;
     background-color: #393939;
     min-width: 17.5rem;

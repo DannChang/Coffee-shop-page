@@ -44,6 +44,7 @@ a {
 }
 
 .main-header {
+    display: flex;
     background-color:#FFF0ED;
 }
 
@@ -61,6 +62,13 @@ a {
     padding: 1rem;
     min-width: 3.125rem;
     max-width: 7.5rem;
+}
+
+.header-nav {
+    width: 87%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .header-nav__link-list {
