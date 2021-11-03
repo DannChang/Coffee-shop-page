@@ -14,7 +14,7 @@
 }
 
 .nitro-coffee-contents {
-    width: 30rem; 
+    width: 25rem; 
     margin-left: 15%;
     padding: 1.25rem;
     text-align: left;
@@ -70,14 +70,12 @@
     width: 21.25rem;
     border-radius: 10px;
     box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-    /* text-align: center; */
     margin: 2.5rem;
 }
 
 .our-products__card-text {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; */
     height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -88,9 +86,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     width: 240px;
-    margin-left: 2rem;
+    /* margin-left: 1.25rem; */
+    margin: 3rem 0 3rem 1.25rem;
 }
 
 .our-products__quantity {
@@ -124,25 +122,102 @@
     text-align: center;
 }
 
-.discount-section {
+.were-different {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.were-different__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* width: 50%; */
+}
+
+.were-different__contents {
+    display: flex;
+    flex-direction: column;
+    max-width: 475px;
+    /* margin: 10rem; */
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-right: 14rem;
+
+}
+
+.were-different__heading {
+    margin-bottom: 1rem;
+}
+
+.were-different__text {
+    margin-bottom: 2rem;
+}
+
+.were-different__image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.were-different__image {
+    max-width: 10%;
+}
+
+.were-different__button {
+    padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+    color: #FFF;
+    background-color: #5BACC3;
+    text-decoration: none;
+    text-align: center;
+    width: 160px;
+}
+
+.were-different__tilted-can-container {
+    /* background-color: #FFF0ED; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.were-different__tilted-can-background {
+    position: relative;
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.were-different__tilted-can-image {
+    position: absolute;
+}
+
+.discount {
     background-color: #373737;
     color: #FFF;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10rem;
     text-align: center;
-    margin-top: 18.75rem ;
-    margin-bottom: 18.75rem;
+    /* margin-top: 18.75rem ;
+    margin-bottom: 18.75rem; */
     min-width: 12.5rem;
     max-width: 80%;
     padding: 2rem;
 }
 
-.discount-section__text {
+.discount__text {
     font-size: 2.813rem;
     font-weight: 400;
 }
 
-.footer-section {
+.footer {
+    background-color: #FFF0ED;
     padding: 5rem;
 }
 

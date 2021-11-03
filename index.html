@@ -16,9 +16,9 @@
             <a href="/">
                 <img class="header__logo" src="../assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo">
             </a>
-            <a href="/">
-                <h2 class="nav-heading">nitro</h2>
-            </a>
+            <h2>
+                <a class="nav-heading" href="/">nitro</a>
+            </h2>
             <nav class="header-nav">
                 <ul class="header-nav__link-list">
                     <li class="header-nav__item">
@@ -34,6 +34,7 @@
             </nav>
         </header>
         <!-- Nitro Coffee Section -->
+        <!-- TODO: Refactor with Flexbox -->
         <section class="nitro-coffee">
             <div class="nitro-coffee__content">
                 <h1 class="nitro-coffee__heading">Nitro Coffee</h1>
@@ -91,12 +92,34 @@
                     VIEW ALL
                 </a>
         </section>
-        <!-- Discount Section -->
-        <section class="discount-section"> 
-            <p class="discount-section__text">Get 20% off your first order with code: <b>FirstNitro</b></p>
-        </section>
+        <!-- We're Different / Discount Section -->
+        <div class="were-different">
+            <div class="were-different__container">
+                <div class="were-different__contents">
+                    <h2 class="were-different__heading">We're Different</h2>
+                    <p class="were-different__text">We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence.</p>
+                    <div class="were-different__image-container">
+                        <img class="were-different__image" src="assets/images/planting.svg" alt="planting transparent icon">
+                        <img class="were-different__image" src="assets/images/coffee-beans.svg" alt="coffee bean transparent icon">
+                        <img class="were-different__image" src="assets/images/coffee-cup.svg" alt="coffee cup transparent icon">
+                    </div>
+                    <a class="were-different__button" href="/">LEARN MORE</a>
+                </div>
+                <div class="were-different__tilted-can-container">
+                    <!-- Found out how to stack one image on-top of the other below: -->
+                    <!-- https://stackoverflow.com/questions/48474/how-do-i-position-one-image-on-top-of-another-in-html#:~:text=As%20the%20simplest%20solution.,the%20relatives%20and%20absolutes%20correct. -->
+                    <img class="were-different__tilted-can-background" src="assets/images/coldbrewbackground.png" alt="zig-zag background">
+                    <img class="were-different__tilted-can-image" src="assets/images/tiltedcan.png">
+                </div>
+            </div> 
+            <section class="discount">
+                <div class="discount__container">
+                    <p class="discount__text">Get 20% off your first order with code: <b>FirstNitro</b></p>
+                </div>
+            </section>
+        </div>
         <!-- Footer -->
-        <footer class="footer-section">
+        <footer class="footer">
             <div class="address">
                 <h3 class="address__heading">Address</h3>
                 <p class="address__text">503 Broadway Penthouse</p>
