@@ -8,29 +8,29 @@
     <title>Coffee Shop - Menu</title>
 </head>
 <body>
+    <!-- Navigation bar -->
+    <header class="main-header">
+        <a href="/">
+            <img class="header__logo" src="../assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo">
+        </a>
+        <h2>
+            <a class="nav-heading" href="/">nitro</a>
+        </h2>
+        <nav class="header-nav">
+            <ul class="header-nav__link-list">
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href='../index.html'>ABOUT</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="">MENU</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link header-nav__link--active" href="">SHOP NOW</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main class="main-page">
-        <!-- Navigation bar -->
-        <header class="main-header">
-            <a href="/">
-                <img class="header__logo" src="../assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo">
-            </a>
-            <h2>
-                <a class="nav-heading" href="/">nitro</a>
-            </h2>
-            <nav class="header-nav">
-                <ul class="header-nav__link-list">
-                    <li class="header-nav__item">
-                        <a class="header-nav__link" href='../index.html'>ABOUT</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a class="header-nav__link" href="">MENU</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a class="header-nav__link header-nav__link--active" href="">SHOP NOW</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
         <!-- Menu Navigation -->
         <section>
             <div class="menu-section">
@@ -52,7 +52,7 @@
         </section>
         <!-- Menu Cards/Items -->
         <article class='menu'>
-            <header class='menu__hot-drinks'>
+            <header class='menu__hot-drinks' id="hot-drinks">
                 <h2 class="menu__hot-drinks-heading">Hot Drinks</h2>
                 <section class="menu-item">
                     <h3 class="menu__hot-drinks-heading">In-house Brew</h3>                      
@@ -73,7 +73,7 @@
                         </p>
                 </section>
             </header>
-            <header class="menu__cold-drinks">
+            <header class="menu__cold-drinks" id="cold-drinks">
                 <h2 class="menu__cold-drinks-heading">Cold Drinks</h2>
                 <section class="menu-item">
                     <h3 class="menu__cold-drinks-heading">Cold Brew</h3>                      
@@ -94,7 +94,7 @@
                         </p>
                 </section>
             </header>
-            <header class="menu__pastries">
+            <header class="menu__pastries" id="pastries">
                 <h2 class="menu__pastries-heading">Pastries</h2>
                 <section class="menu-item">
                     <h3 class="menu__pastries-heading">Bacon Oatmeal Raisin Cookie</h3>                      
@@ -115,7 +115,7 @@
                         </p>
                 </section>
             </header>
-        </article>
+        </article> 
     </main>
 </body>
 </html>

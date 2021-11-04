@@ -9,29 +9,29 @@
     <title>Coffee Shop - Home</title>
 </head>
 <body>
+    <!-- Navigation bar -->
+    <header class="main-header">
+        <a href="/">
+            <img class="header__logo" src="../assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo">
+        </a>
+        <h2>
+            <a class="nav-heading" href="/">nitro</a>
+        </h2>
+        <nav class="header-nav">
+            <ul class="header-nav__link-list">
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href='../index.html'>ABOUT</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="/pages/menu.html">MENU</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link header-nav__link--active" href="/pages/menu.html">SHOP NOW</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main class="main-page">
-        <!-- Navigation bar -->
-        <header class="main-header">
-            <a href="/">
-                <img class="header__logo" src="../assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo">
-            </a>
-            <h2>
-                <a class="nav-heading" href="/">nitro</a>
-            </h2>
-            <nav class="header-nav">
-                <ul class="header-nav__link-list">
-                    <li class="header-nav__item">
-                        <a class="header-nav__link" href='../index.html'>ABOUT</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a class="header-nav__link" href="/pages/menu.html">MENU</a>
-                    </li>
-                    <li class="header-nav__item">
-                        <a class="header-nav__link header-nav__link--active" href="/pages/menu.html">SHOP NOW</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
         <!-- Nitro Coffee Section -->
         <!-- TODO: Refactor with Flexbox -->
         <section class="nitro-coffee">
@@ -117,31 +117,32 @@
                 </div>
             </section>
         </div>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="address">
-                <h3 class="address__heading">Address</h3>
-                <p class="address__text">503 Broadway Penthouse</p>
-                <p class="address__text">New York</p>
-            </div>
-            <div class="hours">
-                <h3 class="hours__heading">Hours</h3>
-                <p class="hours__text"><b>Monday - Friday:</b> 9am - 7pm</p>
-                <p class="hours__text"><b>Saturday - Sunday:</b> 10am - 5pm</p>
-            </div>
-            <div class="social-handles">
-                <h3 class="social-handles__heading">Social</h3>
-                <a class="social-handles__link" href="https://facebook.com">
-                    <img class="social-handles__images"src="assets/images/Facebook-Icon.svg" alt="facebook">
-                </a>
-                <a class="social-handles__link" href="https://yelp.com">
-                    <img class="social-handles__images"src="assets/images/Yelp-Icon.svg" alt="yelp">
-                </a>
-                <a class="social-handles__link" href="https://instagram.com">
-                    <img class="social-handles__images"src="assets/images/Instagram-Icon.svg" alt="instagram">
-                </a>
-            </div>
-        </footer>
     </main>
+    <!-- Footer -->
+    <!-- TODO: Flexbox implementation -->
+    <footer class="footer">
+        <div class="address">
+            <h3 class="address__heading">Address</h3>
+            <p class="address__text">503 Broadway Penthouse</p>
+            <p class="address__text">New York</p>
+        </div>
+        <div class="hours">
+            <h3 class="hours__heading">Hours</h3>
+            <p class="hours__text"><b>Monday - Friday:</b> 9am - 7pm</p>
+            <p class="hours__text"><b>Saturday - Sunday:</b> 10am - 5pm</p>
+        </div>
+        <div class="social-handles">
+            <h3 class="social-handles__heading">Social</h3>
+            <a class="social-handles__link" href="https://facebook.com">
+                <img class="social-handles__images"src="assets/images/Facebook-Icon.svg" alt="facebook">
+            </a>
+            <a class="social-handles__link" href="https://yelp.com">
+                <img class="social-handles__images"src="assets/images/Yelp-Icon.svg" alt="yelp">
+            </a>
+            <a class="social-handles__link" href="https://instagram.com">
+                <img class="social-handles__images"src="assets/images/Instagram-Icon.svg" alt="instagram">
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
