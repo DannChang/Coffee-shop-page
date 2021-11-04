@@ -1,3 +1,5 @@
+@use 'colors';
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -45,7 +47,7 @@ a {
 
 .main-header {
     display: flex;
-    background-color:#FFF0ED;
+    background-color: colors.$nitro-pink;
 }
 
 .nav-heading {
@@ -55,7 +57,7 @@ a {
 }
 
 .header-nav__link--active {
-    color: #5BACC3;
+    color: colors.$nitro-blue;
 }
 
 .header__logo {

@@ -1,7 +1,8 @@
 @use './partials/global';
+@use './partials/colors';
 
 .nitro-coffee {
-    background-color: #FFF0ED;
+    background-color: colors.$nitro-pink;
 }
 
 .nitro-coffee__content {
@@ -28,8 +29,8 @@
 
 .nitro-coffee-contents__button {
     padding: 0.625rem 1.875rem 0.625rem 1.875rem;
-    color: #FFF;
-    background-color: #5BACC3;
+    color: colors.$white;
+    background-color: colors.$nitro-blue;
     text-decoration: none;
     text-align: center;
 }
@@ -41,7 +42,7 @@
 }
 
 .our-products {
-    background-color: #F7F7F7;
+    background-color: colors.$light-gray;
     padding: 5rem;
     width: 100%;
     display: flex;
@@ -67,7 +68,7 @@
     flex-direction: column;
     justify-content: flex-start;
 
-    background-color: #FFF;
+    background-color: colors.$white;
     width: 21.25rem;
     border-radius: 10px;
     box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
@@ -80,7 +81,7 @@
     height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color:#FFF0ED;
+    background-color:colors.$nitro-pink;
 }
 
 .our-products__card-texts {
@@ -92,7 +93,7 @@
 }
 
 .our-products__quantity {
-    color: #909090;
+    color: colors.$gray;
 }
 
 .our-products__images {
@@ -110,14 +111,14 @@
 .our-products__price {
     font-size: 1.875rem;
     font-weight: 700;
-    color: #5BACC3;
+    color: colors.$nitro-blue;
     margin-top: 1.875rem;
 }
 
 .our-products__button {
     padding: 0.625rem 1.875rem 0.625rem 1.875rem;
-    color: #FFF;
-    background-color: #5BACC3;
+    color: colors.$white;
+    background-color: colors.$nitro-blue;
     text-decoration: none;
     text-align: center;
 }
@@ -165,8 +166,8 @@
 
 .were-different__button {
     padding: 0.625rem 1.875rem 0.625rem 1.875rem;
-    color: #FFF;
-    background-color: #5BACC3;
+    color: colors.$white;
+    background-color: colors.$nitro-blue;
     text-decoration: none;
     text-align: center;
     width: 160px;
@@ -195,8 +196,8 @@
 }
 
 .discount {
-    background-color: #373737;
-    color: #FFF;
+    background-color: colors.$graphite;
+    color: colors.$white;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10rem;
@@ -212,7 +213,7 @@
 }
 
 .footer {
-    background-color: #FFF0ED;
+    background-color: colors.$nitro-pink;
     padding: 5rem;
 }
 
