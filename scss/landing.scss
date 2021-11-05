@@ -32,6 +32,18 @@
     margin-bottom: 2.5rem;
 }
 
+@keyframes border-move {
+    from {
+        left: -5px;
+        top: -5px;
+    }
+    to {
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
 .nitro-coffee-contents__button {
     position: relative;
     padding: 0.625rem 1.875rem 0.625rem 1.875rem;
@@ -49,10 +61,10 @@
         left: -5px;
         top: -5px;   
 
+        
     }
     &:active {
-        background-color: red;
-        transform: translate(10px, 10px);
+        animation: border-move 2s;
     }
 
 
@@ -145,10 +157,7 @@
     background-color: colors.$nitro-blue;
     text-decoration: none;
     text-align: center;
-
-
     
-
     &::before {
         position: absolute;
         content: "";
@@ -159,13 +168,9 @@
         top: -5px;
         transition: border 0.25s ease;
         
+        animation: border-move 1s;
     }
 
-    &:hover {
-        transform: translateX(10px);
-        left: 0px;
-        top: 0px;
-    }
 }
 
 
@@ -285,6 +290,18 @@
       }
 }
 
+@keyframes banner {
+    0% {
+        background-color: colors.$graphite;
+    }
+    50% {
+        background-color: colors.$nitro-blue;
+    }
+    100% {
+        background-color: colors.$graphite;
+    }
+}
+
 .discount {
     background-color: colors.$graphite;
     color: colors.$white;
@@ -296,7 +313,9 @@
     max-width: 80%;
     padding: 2rem;
 
-    &
+    &:hover {
+        animation: banner 2.5s infinite ;
+    }
 }
 
 .discount__text {

@@ -115,6 +115,27 @@ a {
   margin-bottom: 2.5rem;
 }
 
+@-webkit-keyframes border-move {
+  from {
+    left: -5px;
+    top: -5px;
+  }
+  to {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes border-move {
+  from {
+    left: -5px;
+    top: -5px;
+  }
+  to {
+    left: 0px;
+    top: 0px;
+  }
+}
 .nitro-coffee-contents__button {
   position: relative;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
@@ -133,8 +154,8 @@ a {
   top: -5px;
 }
 .nitro-coffee-contents__button:active {
-  background-color: red;
-  transform: translate(10px, 10px);
+  -webkit-animation: border-move 2s;
+          animation: border-move 2s;
 }
 
 .nitro-coffee-contents__image {
@@ -233,11 +254,8 @@ a {
   left: -5px;
   top: -5px;
   transition: border 0.25s ease;
-}
-.our-products__button:hover {
-  transform: translateX(10px);
-  left: 0px;
-  top: 0px;
+  -webkit-animation: border-move 1s;
+          animation: border-move 1s;
 }
 
 .were-different {
@@ -352,13 +370,35 @@ a {
   background-repeat: no-repeat;
   width: 150px;
   height: 300px;
-  transition: 0.25s;
 }
 .were-different__tilted-can-image:hover {
-  -webkit-animation: spin 1s infinite linear;
-          animation: spin 1s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+          animation: spin 2s infinite linear;
 }
 
+@-webkit-keyframes banner {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+
+@keyframes banner {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
 .discount {
   background-color: #393939;
   color: #FFF;
@@ -369,6 +409,10 @@ a {
   min-width: 12.5rem;
   max-width: 80%;
   padding: 2rem;
+}
+.discount:hover {
+  -webkit-animation: banner 2.5s infinite;
+          animation: banner 2.5s infinite;
 }
 
 .discount__text {
