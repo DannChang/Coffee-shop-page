@@ -1,4 +1,4 @@
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -86,13 +86,17 @@ a {
 }
 
 .nitro-coffee {
+  display: flex;
+  justify-content: space-between;
   background-color: #FFF0ED;
+  flex-wrap: wrap;
+  padding: 5rem 15rem;
 }
-
 .nitro-coffee__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   vertical-align: 18.75rem;
-  margin-top: 15%;
-  display: inline-block;
 }
 
 .nitro-coffee__heading {
@@ -112,17 +116,31 @@ a {
 }
 
 .nitro-coffee-contents__button {
+  position: relative;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
   color: #FFF;
   background-color: #5BACC3;
   text-decoration: none;
   text-align: center;
 }
+.nitro-coffee-contents__button::before {
+  position: absolute;
+  content: "";
+  width: 147px;
+  height: 42px;
+  border: solid 2px #393939;
+  left: -5px;
+  top: -5px;
+}
+.nitro-coffee-contents__button:active {
+  background-color: red;
+  transform: translate(10px, 10px);
+}
 
 .nitro-coffee-contents__image {
-  display: inline-block;
-  margin-left: 30%;
-  margin-bottom: 5%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .our-products {
@@ -199,11 +217,27 @@ a {
 }
 
 .our-products__button {
+  position: relative;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
   color: #FFF;
   background-color: #5BACC3;
   text-decoration: none;
   text-align: center;
+}
+.our-products__button::before {
+  position: absolute;
+  content: "";
+  width: 130px;
+  height: 42px;
+  border: solid 2px #393939;
+  left: -5px;
+  top: -5px;
+  transition: border 0.25s ease;
+}
+.our-products__button:hover {
+  transform: translateX(10px);
+  left: 0px;
+  top: 0px;
 }
 
 .were-different {
@@ -246,6 +280,7 @@ a {
 }
 
 .were-different__button {
+  position: relative;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
   color: #FFF;
   background-color: #5BACC3;
@@ -253,8 +288,18 @@ a {
   text-align: center;
   width: 160px;
 }
+.were-different__button::before {
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 42px;
+  border: solid 2px #393939;
+  left: -5px;
+  top: -5px;
+}
 
 .were-different__tilted-can-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,17 +308,55 @@ a {
   min-height: 400px;
   max-height: 400px;
 }
+.were-different__tilted-can-container::before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: solid 5px #5BACC3;
+  left: -15px;
+  top: -15px;
+}
 
 .were-different__tilted-can-background {
   position: relative;
+  z-index: 0;
   min-width: 400px;
   max-width: 500px;
   min-height: 400px;
   max-height: 400px;
 }
 
+@-webkit-keyframes spin {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .were-different__tilted-can-image {
   position: absolute;
+  z-index: 2;
+  background-image: url("../assets/images/tiltedcan.png");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 300px;
+  transition: 0.25s;
+}
+.were-different__tilted-can-image:hover {
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
 }
 
 .discount {
@@ -294,6 +377,8 @@ a {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   background-color: #FFF0ED;
   padding: 5rem;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/landing.css">
+    <link rel="stylesheet" href="./scss/landing.css">
     
     <title>Coffee Shop - Home</title>
 </head>
@@ -33,9 +33,8 @@
     </header>
     <main class="main-page">
         <!-- Nitro Coffee Section -->
-        <!-- TODO: Refactor with Flexbox -->
         <section class="nitro-coffee">
-            <div class="nitro-coffee__content">
+            <div class="nitro-coffee-content">
                 <h1 class="nitro-coffee__heading">Nitro Coffee</h1>
                 <div class="nitro-coffee-contents">
                     <p class="nitro-coffee-contents__text">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
@@ -44,7 +43,9 @@
                     </a>
                 </div>
             </div>
-            <img class="nitro-coffee-contents__image" src="assets/images/coffeebeans-hero.png" alt="coffee bag"/>
+            <div class="nitro-coffee-contents__image-container">
+                <img class="nitro-coffee-contents__image" src="assets/images/coffeebeans-hero.png" alt="coffee bag"/>
+            </div>
         </section>
         <!-- Our Products Section -->
         <section class="our-products">
@@ -108,7 +109,8 @@
                     <!-- Found out how to stack one image on-top of the other below: -->
                     <!-- https://stackoverflow.com/questions/48474/how-do-i-position-one-image-on-top-of-another-in-html#:~:text=As%20the%20simplest%20solution.,the%20relatives%20and%20absolutes%20correct. -->
                     <img class="were-different__tilted-can-background" src="assets/images/coldbrewbackground.png" alt="zig-zag background">
-                    <img class="were-different__tilted-can-image" src="assets/images/tiltedcan.png">
+                    <!-- <img class="were-different__tilted-can-image" src="assets/images/tiltedcan.png"> -->
+                    <div class="were-different__tilted-can-image"></div>
                 </div>
             </div> 
             <section class="discount">
@@ -119,7 +121,6 @@
         </div>
     </main>
     <!-- Footer -->
-    <!-- TODO: Refactor to Flexbox -->
     <footer class="footer">
         <div class="address">
             <h3 class="address__heading">Address</h3>
