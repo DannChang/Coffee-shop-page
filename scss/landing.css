@@ -32,11 +32,6 @@ a {
   cursor: pointer;
 }
 
-.main-page {
-  padding: 0;
-  display: inline;
-}
-
 .main-header * {
   display: inline-block;
   text-decoration: none;
@@ -48,20 +43,16 @@ a {
   background-color: #FFF0ED;
 }
 
-.nav-heading {
-  font-size: 2.063rem;
-  font-weight: 300;
-  vertical-align: 0.9rem;
-}
-
-.header-nav__link--active {
-  color: #5BACC3;
-}
-
 .header__logo {
   padding: 1rem;
   min-width: 3.125rem;
   max-width: 7.5rem;
+}
+
+.nav-heading {
+  font-size: 2.063rem;
+  font-weight: 300;
+  vertical-align: 0.9rem;
 }
 
 .header-nav {
@@ -70,49 +61,16 @@ a {
   justify-content: flex-end;
   align-items: center;
 }
-
 .header-nav__link-list {
   list-style-type: none;
 }
-
 .header-nav__item {
   display: inline-block;
   padding-left: 2rem;
 }
 
-.address__heading {
-  font-size: 2.063rem;
-  font-weight: 300;
-}
-
-.nitro-coffee {
-  display: flex;
-  justify-content: space-between;
-  background-color: #FFF0ED;
-  flex-wrap: wrap;
-  padding: 5rem 15rem;
-}
-.nitro-coffee__content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  vertical-align: 18.75rem;
-}
-
-.nitro-coffee__heading {
-  padding: 1.25rem;
-  margin-left: 15%;
-}
-
-.nitro-coffee-contents {
-  width: 25rem;
-  margin-left: 15%;
-  padding: 1.25rem;
-  text-align: left;
-}
-
-.nitro-coffee-contents__text {
-  margin-bottom: 2.5rem;
+.header-nav__link--active {
+  color: #5BACC3;
 }
 
 @-webkit-keyframes border-move {
@@ -136,7 +94,65 @@ a {
     top: 0px;
   }
 }
-.nitro-coffee-contents__button {
+@-webkit-keyframes spin {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes banner {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+@keyframes banner {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5BACC3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+.nitro-coffee {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFF0ED;
+  flex-wrap: wrap;
+  padding: 5rem 15rem;
+}
+.nitro-coffee__heading {
+  width: 25rem;
+  padding: 1.25rem;
+  margin-left: 15%;
+}
+.nitro-coffee__contents {
+  width: 25rem;
+  margin-left: 15%;
+  padding: 1.25rem;
+}
+.nitro-coffee__contents-text {
+  margin-bottom: 2.5rem;
+}
+.nitro-coffee__contents-button {
   position: relative;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
   color: #FFF;
@@ -144,24 +160,16 @@ a {
   text-decoration: none;
   text-align: center;
 }
-.nitro-coffee-contents__button::before {
+.nitro-coffee__contents-button::before {
   position: absolute;
   content: "";
-  width: 147px;
-  height: 42px;
+  width: 9.2rem;
+  height: 2.625rem;
   border: solid 2px #393939;
   left: -5px;
   top: -5px;
-}
-.nitro-coffee-contents__button:active {
   -webkit-animation: border-move 2s;
           animation: border-move 2s;
-}
-
-.nitro-coffee-contents__image {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
 }
 
 .our-products {
@@ -173,19 +181,16 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
 .our-products__heading {
   margin: 1.25rem;
 }
-
-.our-product__cards {
+.our-products__cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
 }
-
 .our-products__card-item {
   display: flex;
   flex-direction: column;
@@ -196,7 +201,6 @@ a {
   box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
   margin: 2.5rem;
 }
-
 .our-products__card-text {
   display: flex;
   justify-content: space-between;
@@ -205,38 +209,32 @@ a {
   border-bottom-right-radius: 10px;
   background-color: #FFF0ED;
 }
-
 .our-products__card-texts {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 240px;
+  width: 15rem;
   margin: 3rem 0 3rem 1.25rem;
 }
-
 .our-products__quantity {
   color: #909090;
 }
-
 .our-products__images {
   margin: auto;
   min-height: 15rem;
   max-height: 34.375rem;
 }
-
 .our-products__price-container {
   display: flex;
   justify-content: center;
-  width: 100px;
+  width: 6.25rem;
 }
-
 .our-products__price {
   font-size: 1.875rem;
   font-weight: 700;
   color: #5BACC3;
   margin-top: 1.875rem;
 }
-
 .our-products__button {
   position: relative;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
@@ -248,8 +246,8 @@ a {
 .our-products__button::before {
   position: absolute;
   content: "";
-  width: 130px;
-  height: 42px;
+  width: 8.125rem;
+  height: 2.625rem;
   border: solid 2px #393939;
   left: -5px;
   top: -5px;
@@ -262,41 +260,34 @@ a {
   display: flex;
   flex-direction: column;
 }
-
 .were-different__container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .were-different__contents {
   display: flex;
   flex-direction: column;
-  max-width: 475px;
+  max-width: 29.7rem;
   margin-top: 10rem;
   margin-bottom: 10rem;
   margin-right: 14rem;
 }
-
 .were-different__heading {
   margin-bottom: 1rem;
 }
-
 .were-different__text {
   margin-bottom: 2rem;
 }
-
 .were-different__image-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-
 .were-different__image {
   max-width: 10%;
 }
-
 .were-different__button {
   position: relative;
   padding: 0.625rem 1.875rem 0.625rem 1.875rem;
@@ -309,22 +300,23 @@ a {
 .were-different__button::before {
   position: absolute;
   content: "";
-  width: 160px;
-  height: 42px;
+  width: 10rem;
+  height: 2.625rem;
   border: solid 2px #393939;
   left: -5px;
   top: -5px;
+  -webkit-animation: border-move 1s;
+          animation: border-move 1s;
 }
-
 .were-different__tilted-can-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 400px;
-  max-width: 500px;
-  min-height: 400px;
-  max-height: 400px;
+  min-width: 25rem;
+  max-width: 31.25rem;
+  min-height: 25rem;
+  max-height: 25rem;
 }
 .were-different__tilted-can-container::before {
   position: absolute;
@@ -336,69 +328,27 @@ a {
   left: -15px;
   top: -15px;
 }
-
 .were-different__tilted-can-background {
   position: relative;
   z-index: 0;
-  min-width: 400px;
-  max-width: 500px;
-  min-height: 400px;
-  max-height: 400px;
-}
-
-@-webkit-keyframes spin {
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  min-width: 25rem;
+  max-width: 31.25rem;
+  min-height: 25rem;
+  max-height: 25rem;
 }
 .were-different__tilted-can-image {
   position: absolute;
   z-index: 2;
   background-image: url("../assets/images/tiltedcan.png");
   background-repeat: no-repeat;
-  width: 150px;
-  height: 300px;
+  width: 9.375rem;
+  height: 18.75rem;
 }
 .were-different__tilted-can-image:hover {
   -webkit-animation: spin 2s infinite linear;
           animation: spin 2s infinite linear;
 }
 
-@-webkit-keyframes banner {
-  0% {
-    background-color: #393939;
-  }
-  50% {
-    background-color: #5BACC3;
-  }
-  100% {
-    background-color: #393939;
-  }
-}
-
-@keyframes banner {
-  0% {
-    background-color: #393939;
-  }
-  50% {
-    background-color: #5BACC3;
-  }
-  100% {
-    background-color: #393939;
-  }
-}
 .discount {
   background-color: #393939;
   color: #FFF;
@@ -409,12 +359,9 @@ a {
   min-width: 12.5rem;
   max-width: 80%;
   padding: 2rem;
-}
-.discount:hover {
   -webkit-animation: banner 2.5s infinite;
           animation: banner 2.5s infinite;
 }
-
 .discount__text {
   font-size: 2.813rem;
   font-weight: 400;
@@ -427,19 +374,15 @@ a {
   padding: 5rem;
 }
 
-.social-handles__images {
-  min-width: 3.125rem;
-  max-width: 7.5rem;
-}
-
 .address {
   display: inline-block;
   margin: auto;
   width: 33.33%;
 }
-
 .address__heading {
   padding-bottom: 1rem;
+  font-size: 2.063rem;
+  font-weight: 300;
 }
 
 .hours {
@@ -447,7 +390,6 @@ a {
   margin: auto;
   width: 33.33%;
 }
-
 .hours__heading {
   padding-bottom: 1rem;
 }
@@ -457,11 +399,13 @@ a {
   margin: auto;
   width: 30%;
 }
-
 .social-handles__heading {
   padding-bottom: 1rem;
 }
-
+.social-handles__images {
+  min-width: 3.125rem;
+  max-width: 7.5rem;
+}
 .social-handles__link {
   text-decoration: none;
 }/*# sourceMappingURL=landing.css.map */

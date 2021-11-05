@@ -34,11 +34,6 @@ a {
     cursor: pointer;
 }
 
-.main-page {
-    padding: 0;
-    display: inline;
-}
-
 .main-header * {
     display: inline-block;
     text-decoration: none;
@@ -50,20 +45,16 @@ a {
     background-color: colors.$nitro-pink;
 }
 
-.nav-heading {
-    font-size: 2.063rem;
-    font-weight: 300;
-    vertical-align: 0.9rem;
-}
-
-.header-nav__link--active {
-    color: colors.$nitro-blue;
-}
-
 .header__logo {
     padding: 1rem;
     min-width: 3.125rem;
     max-width: 7.5rem;
+}
+
+.nav-heading {
+    font-size: 2.063rem;
+    font-weight: 300;
+    vertical-align: 0.9rem;
 }
 
 .header-nav {
@@ -71,18 +62,16 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    &__link-list {
+        list-style-type: none;
+    }
+    &__item {
+        display: inline-block;
+        padding-left: 2rem;
+    }
 }
 
-.header-nav__link-list {
-    list-style-type: none;
+.header-nav__link--active {
+    color: colors.$nitro-blue;
 }
 
-.header-nav__item {
-    display: inline-block;
-    padding-left: 2rem;
-}
-
-.address__heading {
-    font-size: 2.063rem;
-    font-weight: 300;
-}

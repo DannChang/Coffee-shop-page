@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/landing.css">
-    
     <title>Coffee Shop - Home</title>
 </head>
 <body>
@@ -31,31 +30,31 @@
             </ul>
         </nav>
     </header>
-    <main class="main-page">
+    <main>
         <!-- Nitro Coffee Section -->
         <section class="nitro-coffee">
             <div class="nitro-coffee-content">
                 <h1 class="nitro-coffee__heading">Nitro Coffee</h1>
-                <div class="nitro-coffee-contents">
-                    <p class="nitro-coffee-contents__text">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
-                    <a class="nitro-coffee-contents__button" href="/pages/menu.html">
-                        SHOP NOW
-                    </a>
+                <div class="nitro-coffee__contents">
+                    <p class="nitro-coffee__contents-text">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+                        <a class="nitro-coffee__contents-button" href="/pages/menu.html">
+                            SHOP NOW
+                        </a>
                 </div>
             </div>
             <div class="nitro-coffee-contents__image-container">
-                <img class="nitro-coffee-contents__image" src="assets/images/coffeebeans-hero.png" alt="coffee bag"/>
+                <img class="nitro-coffee__contents-image" src="assets/images/coffeebeans-hero.png" alt="coffee bag"/>
             </div>
         </section>
         <!-- Our Products Section -->
         <section class="our-products">
             <h2 class="our-products__heading">Our Products</h2>
-            <div class="our-product__cards">
+            <div class="our-products__cards">
                 <div class="our-products__card-item">
                     <img class="our-products__images" src="assets/images/coffeebeans.png" alt="coffee beans">
                     <div class="our-products__card-text">
                         <div class="our-products__card-texts">                   
-                            <h3>Coffee Beans</h3>
+                            <h3 class="our-products__card-texts-heading">Coffee Beans</h3>
                             <p class="our-products__quantity">Pack of 3</p>
                         </div>
                         <div class="our-products__price-container">
@@ -67,7 +66,7 @@
                     <img class="our-products__images" src="assets/images/coldbrew.png" alt="cold brew">
                     <div class="our-products__card-text">
                         <div class="our-products__card-texts">
-                            <h3>Cold Brew</h3>
+                            <h3 class="our-products__card-texts-heading">Cold Brew</h3>
                             <p class="our-products__quantity">1 can</p>
                         </div>
                         <div class="our-products__price-container">
@@ -79,7 +78,7 @@
                     <img class="our-products__images" src="assets/images/inhousebrew.png" alt="in-house brew">
                     <div class="our-products__card-text">
                         <div class="our-products__card-texts">                      
-                            <h3>In-house Brew</h3>
+                            <h3 class="our-products__card-texts-heading">In-house Brew</h3>
                             <p class="our-products__quantity">1 cup</p>
                         </div>
                         <div class="our-products__price-container">
@@ -92,7 +91,7 @@
                     VIEW ALL
                 </a>
         </section>
-        <!-- We're Different / Discount Section -->
+        <!-- We're Different Section -->
         <div class="were-different">
             <div class="were-different__container">
                 <div class="were-different__contents">
@@ -106,13 +105,11 @@
                     <a class="were-different__button" href="/">LEARN MORE</a>
                 </div>
                 <div class="were-different__tilted-can-container">
-                    <!-- Found out how to stack one image on-top of the other below: -->
-                    <!-- https://stackoverflow.com/questions/48474/how-do-i-position-one-image-on-top-of-another-in-html#:~:text=As%20the%20simplest%20solution.,the%20relatives%20and%20absolutes%20correct. -->
                     <img class="were-different__tilted-can-background" src="assets/images/coldbrewbackground.png" alt="zig-zag background">
-                    <!-- <img class="were-different__tilted-can-image" src="assets/images/tiltedcan.png"> -->
                     <div class="were-different__tilted-can-image"></div>
                 </div>
             </div> 
+            <!-- Discount Section -->
             <section class="discount">
                 <div class="discount__container">
                     <p class="discount__text">Get 20% off your first order with code: <b>FirstNitro</b></p>
@@ -120,7 +117,7 @@
             </section>
         </div>
     </main>
-    <!-- Footer -->
+    <!-- Footer Section-->
     <footer class="footer">
         <div class="address">
             <h3 class="address__heading">Address</h3>

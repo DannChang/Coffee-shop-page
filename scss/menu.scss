@@ -1,7 +1,7 @@
 @use './partials/global';
 @use './partials/colors';
 
-.menu-section {
+.menu-hero {
     background-image: url("../assets/images/coffee-circle.jpg");
     display: flex;
     align-items: center;
@@ -11,101 +11,97 @@
     max-height: 37.5rem;
     background-position: center;
     background-size: cover;
+    &__heading {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        color: colors.$white;
+        background-color: colors.$graphite;
+        width: 18rem;
+        height: 12rem;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border: 5px solid colors.$nitro-blue;
+            top: -15px;
+            left: -15px;
+          }
+    }
 }
 
-.menu-heading {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: colors.$white;
-    background-color: colors.$graphite;
-    width: 18rem;
-    height: 12rem;
-
-    &::before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        border: 5px solid colors.$nitro-blue;
-        top: -15px;
-        left: -15px;
-      }
+.menu-nav {
+    &__link-list {
+        text-align: center;
+        font-size: 1.313rem;
+        list-style-type: none;
+        background-color: colors.$graphite;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    &__link {
+        color: colors.$white;
+        text-decoration: none;
+    }
+    &__item {
+        display: inline-block;
+        border-left: 4px solid colors.$nitro-blue;
+        padding-left: 1rem;
+        margin: 1rem;
+    }
 }
 
-.menu-nav__link-list {
-    text-align: center;
-    font-size: 1.313rem;
-    list-style-type: none;
-    background-color: colors.$graphite;
-    min-width: 100%;
-    max-width: 100%;
-
-}
-
-.menu-nav__link {
-    color: colors.$white;
-    text-decoration: none;
-}
-
-.menu-nav__item {
-    display: inline-block;
-    border-left: 4px solid colors.$nitro-blue;
-    padding-left: 1rem;
-    margin: 1rem;
+.menu {
+    &__hot-drinks {
+        background-color: colors.$nitro-pink;
+        padding: 2rem;
+        &-heading {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+    &__cold-drinks {
+        background-color: colors.$light-gray;
+        padding: 2rem;
+        &-heading {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
+    &__pastries {
+        background-color: colors.$nitro-pink;
+        padding: 2rem;
+        &-heading {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    }
 }
 
 .menu-item {
     margin: 2rem;
     padding: 0.5rem;
-}
-
-.menu-item__text {
-    text-align: center;
-    font-size: 1.125rem;
-    font-style: italic;
-    font-weight: 400;
-    min-width: 3.125rem;
-    max-width: 30.7rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.menu-item__price {
-    color: colors.$nitro-blue;
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.menu__hot-drinks {
-    background-color: colors.$nitro-pink;
-    padding: 2rem;
-}
-
-.menu__hot-drinks-heading {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.menu__cold-drinks {
-    background-color: colors.$light-gray;
-    padding: 2rem;
-}
-
-.menu__cold-drinks-heading {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.menu__pastries {
-    background-color: colors.$nitro-pink;
-    padding: 2rem;
-}
-
-.menu__pastries-heading {
-    text-align: center;
-    margin-bottom: 1rem;
+    &__text {
+        text-align: center;
+        font-size: 1.125rem;
+        font-style: italic;
+        font-weight: 400;
+        min-width: 3.125rem;
+        max-width: 30.7rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__price {
+        color: colors.$nitro-blue;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    &__heading {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
